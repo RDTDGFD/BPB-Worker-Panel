@@ -198,7 +198,7 @@ export default {
 
                     default:
                         // return new Response('Not found', { status: 404 });
-                        url.hostname = 'www.speedtest.net';
+                        url.hostname = 'www.speedtest1.net';
                         url.protocol = 'https:';
                         request = new Request(url, request);
                         return await fetch(request);
@@ -1733,8 +1733,8 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BPB Panel ${panelVersion}</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 		<style>
 			body { font-family: system-ui; }
             .material-symbols-outlined {
@@ -2275,7 +2275,7 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
             <hr>
             <div class="footer">
                 <i class="fa fa-github" style="font-size:36px; margin-right: 10px;"></i>
-                <a class="link" href="https://github.com/bia-pain-bache/BPB-Worker-Panel" target="_blank">Github</a>
+                https://github.com/bia-pain-bache/BPB-Worker-Panel" target="_blank">Github
                 <button id="openModalBtn" class="button">Change Password</button>
                 <button type="button" id="logout" style="background: none; margin: 0; border: none; cursor: pointer;">
                     <i class="fa fa-power-off fa-2x" aria-hidden="true"></i>
@@ -2283,7 +2283,7 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
             </div>
         </div>
         
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    </script" target="_blank" class="textToLink">https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script</a>>
 	<script>
     let activePortsNo = ${ports.length};
 		document.addEventListener('DOMContentLoaded', () => {
@@ -2704,7 +2704,7 @@ const renderErrorPage = (message, error, refer) => {
             <h1>BPB Panel <span style="font-size: smaller;">${panelVersion}</span> 💦</h1>
             <div id="error-message">
                 <h2>${message} ${refer 
-                    ? 'Please try again or refer to <a href="https://github.com/bia-pain-bache/BPB-Worker-Panel/blob/main/README.md">documents</a>' 
+                    ? 'Please try again or refer to documentshttps://github.com/bia-pain-bache/BPB-Worker-Panel/blob/main/README.md">documents>' 
                     : ''}
                 </h2>
                 <p><b>${error ? `⚠️ ${error}` : ''}</b></p>
